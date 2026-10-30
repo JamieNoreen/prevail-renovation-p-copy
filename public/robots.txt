@@ -1,0 +1,30 @@
+# ============================================================
+# AI Crawler Governance
+# ============================================================
+
+# --- Live AI search crawlers: ALLOW (real-time citations) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# --- AI training bots: DISALLOW (protect IP) ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# --- Default ---
+User-agent: *
+Allow: /
